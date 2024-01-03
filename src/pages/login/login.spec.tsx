@@ -13,7 +13,7 @@ describe("Login Page", () => {
     expect(screen.getByPlaceholderText(/Password/i)).toBeInTheDocument();
     expect(screen.getByRole("button", { name: "Log in" })).toBeInTheDocument();
     expect(
-      screen.getByRole("checkbox", { name: "Rember me" })
+      screen.getByRole("checkbox", { name: "Remember me" })
     ).toBeInTheDocument();
     expect(screen.getByText(/Forgot password/i)).toBeInTheDocument();
   });
